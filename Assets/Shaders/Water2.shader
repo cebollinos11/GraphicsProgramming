@@ -48,7 +48,7 @@
 						v2f OUT;
 
 
-						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(1.0,2.0,1.0,1.0));
+						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(1.0, 2.0, 1.0, 1.0) );
 						
 						OUT.texcoord = IN.texcoord;
 						OUT.color = IN.color ;
@@ -71,8 +71,12 @@
 						
 						if (IN.texcoord.y <= _WaterLevel)
 						{
-							float diff = sin(_Time.x * 30 + IN.texcoord.y*50)*0.01;
+
+							//water movement
+							float diff = sin(_Time.x * 90 + IN.texcoord.y*IN.texcoord.y*90)*0.02;
 							c = tex2D(_MainTex, float2(IN.texcoord.x+diff, 1.0 - IN.texcoord.y*d)) * IN.color;
+
+							//water tint
 							c.b = 1.0;
 							
 						}
