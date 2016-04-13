@@ -1,6 +1,8 @@
-﻿Shader "Pablo/Template" {
+﻿Shader "Pablo/OutLine" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
+		_OutlineSize("Outline Size", Range(0.0, 0.1)) = 0.0 
+		_OutlineColor("Outline Color", Color) = (1, 1, 1, 1)
 		
 
 	}
@@ -40,7 +42,8 @@
 					};
 
 					
-					
+					float _OutlineSize;
+					float4 _OutlineColor;
 					
 					v2f vert(appdata_t IN)
 					{
@@ -56,12 +59,53 @@
 						return OUT;
 					}
 
+					
+
 					sampler2D _MainTex;
 					fixed4 frag(v2f IN) : SV_Target
 					{
 						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
 						
 						c.rgb *= c.a;
+
+						fixed4 t;
+
+						if (c.a == 0)
+						{
+							t = tex2D(_MainTex, IN.texcoord+ float2(0.0,_OutlineSize));
+
+							
+							if (t.a > 0.0)
+							{
+								c = _OutlineColor;
+								return c;
+							}
+
+							
+
+							t = tex2D(_MainTex, IN.texcoord + float2(0.0, -_OutlineSize));
+							if (t.a > 0.0)
+							{
+								c = _OutlineColor;
+								return c;
+							}
+
+							t = tex2D(_MainTex, IN.texcoord + float2(_OutlineSize,0.0));
+							if (t.a > 0.0)
+							{
+								c = _OutlineColor;
+								return c;
+							}
+
+							t = tex2D(_MainTex, IN.texcoord + float2(-_OutlineSize, 0.0));
+							if (t.a > 0.0)
+							{
+								c = _OutlineColor;
+								return c;
+							}
+						}
+							
+
 						return c;
 					}
 						ENDCG

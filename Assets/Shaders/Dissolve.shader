@@ -1,4 +1,4 @@
-﻿Shader "Pablo/Dissolve" {
+﻿Shader "Pablo/Dissolve/Basic" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_DissolveTex("Dissolve Texture", 2D) = "white" {}
