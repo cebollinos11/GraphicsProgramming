@@ -1,8 +1,8 @@
-﻿Shader "Pablo/Dissolve" {
+﻿Shader "Pablo/BlowHeadUp" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_DissolveTex("Dissolve Texture", 2D) = "white" {}
-		_DissolveAmount("Dissolve Amount", Range(0.0,1.0)) = 0.0
+		_DissolveTex("Blow Up Texture", 2D) = "white" {}
+		[Toggle]_BlowUp("Blow up", float) = 0.0
 		
 
 	}
@@ -41,10 +41,7 @@
 						half2 texcoord  : TEXCOORD0;
 					};
 
-					
-					fixed4 _MaskColor;
-					float _DissolveAmount;
-					
+					float _BlowUp;
 					
 					v2f vert(appdata_t IN)
 					{
@@ -70,11 +67,14 @@
 
 						c.rgb *= c.a;
 
-						if (dissolveMask.r < _DissolveAmount)
+						if (dissolveMask.r < IN.texcoord.y  && _BlowUp >0.0)
 						{
-							discard;
+							//discard;
+							c = fixed4(0.0, 0.0, 0.0, 0.0);
 						}
-							
+
+						
+							//
 							 
 
 
