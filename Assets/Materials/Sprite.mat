@@ -165,7 +165,7 @@ Material:
       data:
         first:
           name: _OutlineSize
-        second: 0.023
+        second: 0.034
       data:
         first:
           name: _BreathAmount
@@ -190,4 +190,4 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: 1, g: 0, b: 0, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}

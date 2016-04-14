@@ -1,4 +1,4 @@
-﻿Shader "Pablo/Water" {
+﻿Shader "Pablo/Water/Half" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_WaterLevel("Water Level",Range(0.0,1.0)) = 0.5
@@ -64,7 +64,7 @@
 
 						if (IN.texcoord.y <= _WaterLevel)
 						{
-							float diff = sin(_Time.x * 30 + IN.texcoord.y*50)*0.01;
+							float diff = sin(_Time.x * 90 + IN.texcoord.y*90)*0.02;
 							c = tex2D(_MainTex, float2(IN.texcoord.x+diff, 1.0 - IN.texcoord.y )) * IN.color;
 							c.b = 1.0;
 							

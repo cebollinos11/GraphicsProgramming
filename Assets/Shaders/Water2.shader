@@ -1,4 +1,4 @@
-﻿Shader "Pablo/Water2" {
+﻿Shader "Pablo/Water/Full" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_WaterLevel("Water Level",Range(0.0,1.0)) = 0.5
@@ -73,7 +73,7 @@
 						{
 
 							//water movement
-							float diff = sin(_Time.x * 90 + IN.texcoord.y*IN.texcoord.y*90)*0.02;
+							float diff = sin(_Time.x * 90 + IN.texcoord.y*IN.texcoord.y*180)*0.03;
 							c = tex2D(_MainTex, float2(IN.texcoord.x+diff, 1.0 - IN.texcoord.y*d)) * IN.color;
 
 							//water tint
