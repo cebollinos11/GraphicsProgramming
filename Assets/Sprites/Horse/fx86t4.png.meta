@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 37e4b219e0a2ab649b6eba132b883722
+timeCreated: 1460738854
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fx86t4_0
+    21300002: fx86t4_1
+    21300004: fx86t4_2
+    21300006: fx86t4_3
+    21300008: fx86t4_4
+    21300010: fx86t4_5
+    21300012: fx86t4_6
+    21300014: fx86t4_7
+    21300016: fx86t4_8
+    21300018: fx86t4_9
+    21300020: fx86t4_10
+    21300022: fx86t4_11
+    21300024: fx86t4_12
+    21300026: fx86t4_13
+    21300028: fx86t4_14
+    21300030: fx86t4_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fx86t4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 18}
+        - {x: 17.5, y: 38}
+        - {x: 17.5, y: 78}
+        - {x: 11.5, y: 96}
+        - {x: -1.5, y: 96}
+        - {x: -18.5, y: 77}
+        - {x: -18.5, y: 39}
+        - {x: -17.5, y: 17}
+        - {x: -13.5, y: 16}
+        - {x: -2.5, y: 16}
+        - {x: -0.5, y: 20}
+        - {x: -0.5, y: 29}
+        - {x: -0.5, y: 24}
+    - name: fx86t4_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 288
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 96}
+        - {x: -18.5, y: 79}
+        - {x: -18.5, y: 0}
+        - {x: 15.5, y: 0}
+        - {x: 17.5, y: 11}
+        - {x: 17.5, y: 73}
+        - {x: 8.5, y: 96}
+    - name: fx86t4_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 288
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 96}
+        - {x: -18.5, y: 79}
+        - {x: -18.5, y: 9}
+        - {x: -9.5, y: 0}
+        - {x: -3.5, y: 3}
+        - {x: 0.5, y: 7}
+        - {x: 0.5, y: 16}
+        - {x: 0.5, y: 1}
+        - {x: 1.5, y: 0}
+        - {x: 16.5, y: 0}
+        - {x: 17.5, y: 15}
+        - {x: 17.5, y: 81}
+        - {x: 7.5, y: 96}
+    - name: fx86t4_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 288
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 91}
+        - {x: 3.5, y: 96}
+        - {x: -12.5, y: 96}
+        - {x: -18.5, y: 84}
+        - {x: -18.5, y: 14}
+        - {x: -12.5, y: 9}
+        - {x: -2.5, y: 9}
+        - {x: 10.5, y: 14}
+        - {x: 17.5, y: 28}
+        - {x: 17.5, y: 72}
+    - name: fx86t4_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 81}
+        - {x: -41.5, y: 5}
+        - {x: 53.5, y: 5}
+        - {x: 53.5, y: 62}
+        - {x: -6.5, y: 81}
+    - name: fx86t4_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 192
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 76}
+        - {x: -52.5, y: 76}
+        - {x: -53.5, y: 75}
+        - {x: -53.5, y: 29}
+        - {x: -48.5, y: 19}
+        - {x: -41.5, y: 17}
+        - {x: -33.5, y: 17}
+        - {x: -29.5, y: 19}
+        - {x: -45.5, y: 4}
+        - {x: 53.5, y: 4}
+        - {x: 53.5, y: 64}
+        - {x: 42.5, y: 69}
+    - name: fx86t4_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 192
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 30}
+        - {x: 25.5, y: 10}
+        - {x: 43.5, y: 15}
+        - {x: 50.5, y: 19}
+        - {x: 53.5, y: 31}
+        - {x: 53.5, y: 73}
+        - {x: -52.5, y: 73}
+        - {x: -52.5, y: 48}
+        - {x: -50.5, y: 43}
+        - {x: -35.5, y: 3}
+        - {x: -6.5, y: 3}
+        - {x: 9.5, y: 8}
+        - {x: 7.5, y: 24}
+        - {x: -0.5, y: 29}
+        - {x: -3.5, y: 29}
+    - name: fx86t4_7
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 192
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.5, y: 74}
+        - {x: -52.5, y: 29}
+        - {x: -26.5, y: 9}
+        - {x: 45.5, y: 9}
+        - {x: 53.5, y: 21}
+        - {x: 53.5, y: 74}
+    - name: fx86t4_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.5, y: 81}
+        - {x: -1.5, y: 81}
+        - {x: -53.5, y: 69}
+        - {x: -53.5, y: 5}
+        - {x: 36.5, y: 5}
+        - {x: 40.5, y: 18}
+        - {x: 41.5, y: 26}
+    - name: fx86t4_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 96
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 76}
+        - {x: -53.5, y: 60}
+        - {x: -53.5, y: 48}
+        - {x: -51.5, y: 47}
+        - {x: -46.5, y: 47}
+        - {x: -50.5, y: 36}
+        - {x: -53.5, y: 27}
+        - {x: -53.5, y: 14}
+        - {x: -39.5, y: 4}
+        - {x: 53.5, y: 4}
+        - {x: 53.5, y: 76}
+    - name: fx86t4_10
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 96
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: 3}
+        - {x: 53.5, y: 33}
+        - {x: 53.5, y: 61}
+        - {x: 48.5, y: 73}
+        - {x: -53.5, y: 73}
+        - {x: -53.5, y: 3}
+    - name: fx86t4_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 96
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: 74}
+        - {x: -40.5, y: 74}
+        - {x: -53.5, y: 69}
+        - {x: -53.5, y: 12}
+        - {x: -37.5, y: 9}
+        - {x: 42.5, y: 9}
+        - {x: 52.5, y: 24}
+        - {x: 52.5, y: 61}
+        - {x: 49.5, y: 73}
+    - name: fx86t4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 1}
+        - {x: 17.5, y: 3}
+        - {x: 17.5, y: 82}
+        - {x: 11.5, y: 96}
+        - {x: -10.5, y: 96}
+        - {x: -17.5, y: 78}
+        - {x: -17.5, y: 2}
+        - {x: -15.5, y: 0}
+        - {x: -4.5, y: 0}
+        - {x: -0.5, y: 2}
+        - {x: -1.5, y: 15}
+        - {x: -1.5, y: 10}
+    - name: fx86t4_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 92}
+        - {x: -12.5, y: 85}
+        - {x: -18.5, y: 78}
+        - {x: -18.5, y: 0}
+        - {x: 15.5, y: 0}
+        - {x: 16.5, y: 6}
+        - {x: 16.5, y: 70}
+        - {x: 7.5, y: 92}
+    - name: fx86t4_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 9}
+        - {x: 9.5, y: 9}
+        - {x: 16.5, y: 16}
+        - {x: 16.5, y: 75}
+        - {x: 15.5, y: 79}
+        - {x: 11.5, y: 80}
+        - {x: -10.5, y: 80}
+        - {x: -17.5, y: 53}
+        - {x: -17.5, y: 24}
+        - {x: -15.5, y: 11}
+        - {x: -11.5, y: 7}
+        - {x: -5.5, y: 7}
+        - {x: -1.5, y: 11}
+        - {x: -1.5, y: 17}
+        - {x: -0.5, y: 13}
+    - name: fx86t4_15
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 107
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 81}
+        - {x: -13.5, y: 78}
+        - {x: -17.5, y: 57}
+        - {x: -17.5, y: 11}
+        - {x: 16.5, y: 11}
+        - {x: 16.5, y: 81}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

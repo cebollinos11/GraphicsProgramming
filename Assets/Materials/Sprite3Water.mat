@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Sprite2
-  m_Shader: {fileID: 4800000, guid: 84d5b133b22acd843adc72a635ebcef0, type: 3}
+  m_Name: Sprite3Water
+  m_Shader: {fileID: 4800000, guid: bbcf307146abfe449a9ebb8bd0d4629e, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -173,7 +173,11 @@ Material:
       data:
         first:
           name: _WaterLevel
-        second: 0.5
+        second: 1
+      data:
+        first:
+          name: d
+        second: 2
     m_Colors:
       data:
         first:

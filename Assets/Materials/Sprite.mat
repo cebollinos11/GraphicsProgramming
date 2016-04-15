@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Sprite
-  m_Shader: {fileID: 4800000, guid: 8a15f910c80753f4eb3fe17e6ec2d385, type: 3}
+  m_Shader: {fileID: 4800000, guid: bbcf307146abfe449a9ebb8bd0d4629e, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -145,7 +145,7 @@ Material:
       data:
         first:
           name: _FlashSpeed
-        second: 17
+        second: 35
       data:
         first:
           name: _CutAmount
@@ -165,7 +165,7 @@ Material:
       data:
         first:
           name: _OutlineSize
-        second: 0.042
+        second: 0
       data:
         first:
           name: _BreathAmount
@@ -174,6 +174,10 @@ Material:
         first:
           name: _WaterLevel
         second: 0.5
+      data:
+        first:
+          name: d
+        second: 2
     m_Colors:
       data:
         first:
@@ -186,8 +190,8 @@ Material:
       data:
         first:
           name: _MaskColor
-        second: {r: 0.8161765, g: 0.6121324, b: 0.6121324, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _OutlineColor
-        second: {r: 0.8455882, g: 0.26113755, b: 0.26113755, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}

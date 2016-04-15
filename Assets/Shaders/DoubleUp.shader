@@ -1,8 +1,7 @@
-﻿Shader "Pablo/Water/Half" {
+﻿Shader "Pablo/DoubleUp" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_WaterLevel("Water Level",Range(0.0,1.0)) = 0.5
-		
+		[HideInInspector]d("d",Range(2,2)) = 2.0
 
 	}
 	SubShader
@@ -38,17 +37,19 @@
 						float4 vertex   : SV_POSITION;
 						fixed4 color : COLOR;
 						half2 texcoord  : TEXCOORD0;
+						half2 UV : TEXCOORD1;
 					};
 
-					float _WaterLevel;
 					
+					float d = 2.0;
 					
 					v2f vert(appdata_t IN)
 					{
 						v2f OUT;
-						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(1, 1, 1, 1));
+						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(d, d, 1.0, 1.0));
 						OUT.texcoord = IN.texcoord;
-						OUT.color = IN.color;
+						OUT.color = IN.color ;
+						OUT.UV = IN.texcoord*d - float2(1 / d, 1 / d);
 /*
 #ifdef PIXELSNAP_ON                 
 						OUT.vertex = UnityPixelSnap(OUT.vertex);
@@ -60,17 +61,9 @@
 					sampler2D _MainTex;
 					fixed4 frag(v2f IN) : SV_Target
 					{
-						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
+						//fixed4 c = tex2D(_MainTex, IN.texcoord*d-float2(1/d,1/d)) * IN.color;
+						fixed4 c = tex2D(_MainTex, IN.UV) * IN.color;
 
-						if (IN.texcoord.y <= _WaterLevel)
-						{
-							float diff = sin(_Time.x * 90 + IN.texcoord.y * 90) *  0.02;
-							
-							c = tex2D(_MainTex, float2(IN.texcoord.x+diff,  IN.texcoord.y )) * IN.color;
-							c.b = 1.0;
-							
-						}
-						
 						c.rgb *= c.a;
 						return c;
 					}
