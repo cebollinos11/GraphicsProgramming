@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: f6ec879d872a8394db7be6b3b35da09e
-timeCreated: 1460625811
+guid: d22dda3cff9331f47acb97b2c059052f
+timeCreated: 1460800234
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    8900000: generatedCubemap
-    21300000: acidbeast_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,10 +26,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -51,24 +49,7 @@ TextureImporter:
   textureType: 5
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: acidbeast_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 1
-        width: 43
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 30}
-        - {x: -21.5, y: 20}
-        - {x: -21.5, y: -30}
-        - {x: 21.5, y: -30}
-        - {x: 21.5, y: 14}
-        - {x: 15.5, y: 30}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

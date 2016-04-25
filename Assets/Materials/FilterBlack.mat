@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Sprite2
-  m_Shader: {fileID: 4800000, guid: 5c4bc12aee5e133418f6f73acb707897, type: 3}
+  m_Name: FilterBlack
+  m_Shader: {fileID: 4800000, guid: 1e12508a96b4da347927f0d743b4d721, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -145,7 +145,7 @@ Material:
       data:
         first:
           name: _FlashSpeed
-        second: 36
+        second: 21
       data:
         first:
           name: _CutAmount

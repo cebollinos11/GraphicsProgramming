@@ -1,9 +1,9 @@
-﻿Shader "Pablo/Water/Half" {
+﻿Shader "Pablo/Outline/DoubleUp" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_WaterLevel("Water Level",Range(0.0,1.0)) = 0.5
-			_WaterAmplitude("Water Amplitude", Range(0, 0.04)) = 0.02
-		
+		[HideInInspector]d("d",Range(2,2)) = 2.0
+			_OutlineSize("Outline Size", Range(0.0, 0.1)) = 0.0
+			_OutlineColor("Outline Color", Color) = (1, 1, 1, 1)
 
 	}
 	SubShader
@@ -39,17 +39,21 @@
 						float4 vertex   : SV_POSITION;
 						fixed4 color : COLOR;
 						half2 texcoord  : TEXCOORD0;
+						half2 UV : TEXCOORD1;
 					};
 
-					float _WaterLevel;
 					
-					
+					float d = 2.0;
+					float4 _OutlineColor;
 					v2f vert(appdata_t IN)
 					{
 						v2f OUT;
-						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(1, 1, 1, 1));
+						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(d, d, 1.0, 1.0));
 						OUT.texcoord = IN.texcoord;
-						OUT.color = IN.color;
+						OUT.color = IN.color ;
+						OUT.UV = IN.texcoord*d - float2(1 / d, 1 / d);
+
+
 /*
 #ifdef PIXELSNAP_ON                 
 						OUT.vertex = UnityPixelSnap(OUT.vertex);
@@ -59,20 +63,18 @@
 					}
 
 					sampler2D _MainTex;
-					float _WaterAmplitude;
 					fixed4 frag(v2f IN) : SV_Target
 					{
-						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
 
-						if (IN.texcoord.y <= _WaterLevel)
+						fixed4 c = tex2D(_MainTex, IN.UV) * IN.color;
+
+						if (c.a == 0)
 						{
-							float diff = sin(_Time.x * 45 + IN.texcoord.y * 90) *  _WaterAmplitude;
-							
-							c = tex2D(_MainTex, float2(IN.texcoord.x+diff,  IN.texcoord.y )) * IN.color;
-							//c.b = 1.0;
-							
+							c = tex2D(_MainTex, IN.UV) * IN.color;
 						}
 						
+						
+
 						c.rgb *= c.a;
 						return c;
 					}

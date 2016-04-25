@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WaterFull
-  m_Shader: {fileID: 4800000, guid: 3f6fba1acc6abcc4493d78c5e4107c27, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7839fe4f2bf0b8644b3884a187c472a7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 912c16996d462df43a5147c02236101d, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -130,7 +130,15 @@ Material:
       data:
         first:
           name: _WaterLevel
-        second: 0.5
+        second: 1
+      data:
+        first:
+          name: d
+        second: 2
+      data:
+        first:
+          name: _WaterAmplitude
+        second: 0.02
     m_Colors:
       data:
         first:

@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Sprite2
-  m_Shader: {fileID: 4800000, guid: 5c4bc12aee5e133418f6f73acb707897, type: 3}
-  m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
+  m_Name: NegativeRadious
+  m_Shader: {fileID: 4800000, guid: 2b5622b343a6dcc488f4c54a31612eea, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
   stringTagMap: {}
@@ -78,13 +78,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DissolveTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 30c1b49163d65f44bb95bec28159701d, type: 3}
-          m_Scale: {x: 0, y: 0}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -98,10 +91,6 @@ Material:
         first:
           name: _Cutoff
         second: 0.5
-      data:
-        first:
-          name: PixelSnap
-        second: 1
       data:
         first:
           name: _Parallax
@@ -140,44 +129,12 @@ Material:
         second: 0
       data:
         first:
-          name: _MaskAmount
+          name: _Radious
         second: 0
       data:
         first:
-          name: _FlashSpeed
-        second: 36
-      data:
-        first:
-          name: _CutAmount
-        second: 0
-      data:
-        first:
-          name: _DissolveAmount
-        second: 0
-      data:
-        first:
-          name: _DissolveHeight
-        second: 0
-      data:
-        first:
-          name: _BlowUp
-        second: 0
-      data:
-        first:
-          name: _OutlineSize
-        second: 0.012
-      data:
-        first:
-          name: _BreathAmount
-        second: 0
-      data:
-        first:
-          name: _WaterLevel
-        second: 0.5
-      data:
-        first:
-          name: d
-        second: 2
+          name: _OutlineThickness
+        second: 0.017
     m_Colors:
       data:
         first:
@@ -186,12 +143,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _MaskColor
-        second: {r: 1, g: 0.8602941, b: 0.8602941, a: 1}
-      data:
-        first:
-          name: _OutlineColor
-        second: {r: 0.60294116, g: 0.1862024, b: 0.1862024, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Sprite3Water
-  m_Shader: {fileID: 4800000, guid: bbcf307146abfe449a9ebb8bd0d4629e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7839fe4f2bf0b8644b3884a187c472a7, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -165,7 +165,7 @@ Material:
       data:
         first:
           name: _OutlineSize
-        second: 0.012
+        second: 0
       data:
         first:
           name: _BreathAmount
@@ -178,6 +178,10 @@ Material:
         first:
           name: d
         second: 2
+      data:
+        first:
+          name: _WaterAmplitude
+        second: 0
     m_Colors:
       data:
         first:
@@ -194,4 +198,4 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: 0.60294116, g: 0.1862024, b: 0.1862024, a: 1}
+        second: {r: 0.029411793, g: 0, b: 0, a: 1}

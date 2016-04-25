@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Sprite2
-  m_Shader: {fileID: 4800000, guid: 5c4bc12aee5e133418f6f73acb707897, type: 3}
+  m_Name: Flash
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: PIXELSNAP_ON _DISSOLVEHEIGHT_ON
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -145,7 +145,7 @@ Material:
       data:
         first:
           name: _FlashSpeed
-        second: 36
+        second: 21
       data:
         first:
           name: _CutAmount

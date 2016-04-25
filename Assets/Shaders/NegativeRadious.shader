@@ -1,8 +1,8 @@
-﻿Shader "Pablo/Water/Half" {
+﻿Shader "Pablo/Negative/NegativeRadious" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_WaterLevel("Water Level",Range(0.0,1.0)) = 0.5
-			_WaterAmplitude("Water Amplitude", Range(0, 0.04)) = 0.02
+		_Radious("Radious", Range(0.0, 1.0)) = 0.0
+		_OutlineThickness("Outline Thickness",Range(0.0,0.5)) = 0.0
 		
 
 	}
@@ -41,15 +41,15 @@
 						half2 texcoord  : TEXCOORD0;
 					};
 
-					float _WaterLevel;
+					
 					
 					
 					v2f vert(appdata_t IN)
 					{
 						v2f OUT;
-						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex*float4(1, 1, 1, 1));
+						OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
 						OUT.texcoord = IN.texcoord;
-						OUT.color = IN.color;
+						OUT.color = IN.color ;
 /*
 #ifdef PIXELSNAP_ON                 
 						OUT.vertex = UnityPixelSnap(OUT.vertex);
@@ -57,23 +57,28 @@
 						'*/
 						return OUT;
 					}
-
+					float _Radious;
 					sampler2D _MainTex;
-					float _WaterAmplitude;
+					float _OutlineThickness;
 					fixed4 frag(v2f IN) : SV_Target
 					{
-						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
+						fixed4 c =  tex2D(_MainTex, IN.texcoord) * IN.color;
 
-						if (IN.texcoord.y <= _WaterLevel)
+						fixed4 origc = c;
+
+						if (_Radious >0.0 && distance(IN.texcoord, float2(0.5, 0.5)) < _Radious + _OutlineThickness)
 						{
-							float diff = sin(_Time.x * 45 + IN.texcoord.y * 90) *  _WaterAmplitude;
-							
-							c = tex2D(_MainTex, float2(IN.texcoord.x+diff,  IN.texcoord.y )) * IN.color;
-							//c.b = 1.0;
-							
+							c.rgb = 1.0f;
+						}
+
+						if (distance(IN.texcoord,float2(0.5,0.5)) < _Radious)
+						{
+							c.r = 1.0 - origc.r;
+							c.g = 1.0 - origc.g;
+							c.b = 1.0 - origc.b;
 						}
 						
-						c.rgb *= c.a;
+						c.rgb *= origc.a;
 						return c;
 					}
 						ENDCG
