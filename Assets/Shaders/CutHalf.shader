@@ -1,7 +1,7 @@
 ﻿Shader "Pablo/CutHalf" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_CutAmount("Amount Cut", Range(0.0, 1.0)) = 0.0
+		_CutAmount("Value", Range(0.0, 1.0)) = 0.0
 		
 
 	}

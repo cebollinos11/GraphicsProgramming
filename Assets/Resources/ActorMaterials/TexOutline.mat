@@ -130,7 +130,7 @@ Material:
       data:
         first:
           name: _OutlineSize
-        second: 0.019
+        second: 0.055
       data:
         first:
           name: _WaterLevel
