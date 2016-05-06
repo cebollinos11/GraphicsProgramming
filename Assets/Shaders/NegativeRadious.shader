@@ -68,11 +68,13 @@
 
 						if (_Radious >0.0 && distance(IN.texcoord, float2(0.5, 0.5)) < _Radious + _OutlineThickness)
 						{
-							c.rgb = 1.0f;
+							c.rgb = 0.0f;
 						}
 
 						if (distance(IN.texcoord,float2(0.5,0.5)) < _Radious)
 						{
+							//origc = tex2D(_MainTex, IN.texcoord + float2(sin(_Time.x * 45 + IN.texcoord.y * 90), 0.0)*0.01)*IN.color;
+
 							c.r = 1.0 - origc.r;
 							c.g = 1.0 - origc.g;
 							c.b = 1.0 - origc.b;
