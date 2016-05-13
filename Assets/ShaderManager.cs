@@ -31,7 +31,7 @@ public class ShaderManager : MonoBehaviour {
 			{
 			    actorRenderers[i] = actors[i].GetComponent<Renderer>();
 			}
-        ShaderPropertyList = new string[] { "_DissolveAmount", "_CutAmount","_BlowUp","_DissolveHeight","_FlashSpeed" , "_Radious" ,"_OutlineSize" };
+        ShaderPropertyList = new string[] { "_DissolveAmount", "_CutAmount","_BlowUp","_DissolveHeight","_FlashSpeed" , "_Radious" ,"_OutlineSize","_WaterLevel" };
         LoadMaterials();
         
 
