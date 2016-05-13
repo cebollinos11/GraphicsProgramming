@@ -140,12 +140,8 @@ Material:
         second: 0
       data:
         first:
-          name: _MaskAmount
-        second: 0
-      data:
-        first:
           name: _FlashSpeed
-        second: 38
+        second: 0.43
       data:
         first:
           name: _CutAmount
@@ -156,19 +152,7 @@ Material:
         second: 0
       data:
         first:
-          name: _DissolveHeight
-        second: 0
-      data:
-        first:
           name: _BlowUp
-        second: 0
-      data:
-        first:
-          name: _OutlineSize
-        second: 0.012
-      data:
-        first:
-          name: _BreathAmount
         second: 0
       data:
         first:
@@ -178,6 +162,26 @@ Material:
         first:
           name: d
         second: 2
+      data:
+        first:
+          name: _OutlineSize
+        second: 0.012
+      data:
+        first:
+          name: _MaskAmount
+        second: 0
+      data:
+        first:
+          name: _DissolveHeight
+        second: 0
+      data:
+        first:
+          name: _BreathAmount
+        second: 0
+      data:
+        first:
+          name: _AutomaticSinusoidal
+        second: 0
     m_Colors:
       data:
         first:
