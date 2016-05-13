@@ -134,7 +134,7 @@ Material:
       data:
         first:
           name: _OutlineThickness
-        second: 0.049
+        second: 0.016
     m_Colors:
       data:
         first:

@@ -3,7 +3,7 @@
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_MaskColor("Mask Color", Color) = (1, 1, 1, 1)
 			//_MaskAmount("Mask Amount", Range(0.0, 1.0)) = 0.0
-			_FlashSpeed("Speed", Range(1.0,70.0)) = 20.0
+			_FlashSpeed("Speed", Range(0.0,1.0)) = 0.5
 			//[MaterialToggle] PixelSnap("Pixel snap", Float) = 0
 
 	}
@@ -64,7 +64,7 @@
 					fixed4 frag(v2f IN) : SV_Target
 					{
 						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
-						float x = sin(_Time.y*_FlashSpeed)/2.0+0.5;
+						float x = sin(_Time.y*_FlashSpeed*20)/2.0+0.5;
 						float _CutAmount = cos(_Time.y*2) / 2.0 + 0.5;
 						//if (!c.r < x || !c.g<x || !c.b <x)
 						c.rgb = lerp(c.rgb, _MaskColor.rgb , x);

@@ -1,7 +1,7 @@
 ﻿Shader "Pablo/OutLine" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-		_OutlineSize("Outline Size", Range(0.0, 0.1)) = 0.0 
+		_OutlineSize("Outline Size", Range(0.0, 1)) = 0.0 
 		_OutlineColor("Outline Color", Color) = (1, 1, 1, 1)
 		
 
@@ -64,6 +64,10 @@
 					sampler2D _MainTex;
 					fixed4 frag(v2f IN) : SV_Target
 					{
+
+						
+						_OutlineSize /= 10.0;
+
 						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
 						
 						c.rgb *= c.a;

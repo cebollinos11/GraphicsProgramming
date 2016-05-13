@@ -70,10 +70,23 @@
 
 						c.rgb *= c.a;
 
-						if (dissolveMask.r < _DissolveHeight && _DissolveHeight > IN.texcoord.y)
+						if (_DissolveHeight == 1)
+						{
+							discard;
+						}
+
+
+						if (_DissolveHeight > IN.texcoord.y )// && dissolveMask.r < _DissolveHeight )
 						{
 							//discard;
-							c = fixed4(0.0, 0.0, 0.0, 0.0);
+							
+							if (dissolveMask.r >  _DissolveHeight-IN.texcoord.y/2)
+							{
+								//c = dissolveMask;
+							}
+							else{
+								c = fixed4(0.0, 0.0, 0.0, 0.0);
+							}
 						}
 
 						

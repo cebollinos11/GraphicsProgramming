@@ -2,7 +2,7 @@
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_DissolveTex("Dissolve Texture", 2D) = "white" {}
-		_DissolveAmount("Dissolve Amount", Range(0.0,1.0)) = 0.0
+		_DissolveAmount("Value", Range(0.0,1.0)) = 0.0
 		
 
 	}

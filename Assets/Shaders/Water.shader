@@ -69,7 +69,7 @@
 							float diff = sin(_Time.x * 45 + IN.texcoord.y * 90) *  _WaterAmplitude;
 							
 							c = tex2D(_MainTex, float2(IN.texcoord.x+diff,  IN.texcoord.y )) * IN.color;
-							//c.b = 1.0;
+							c.b = 1.0;
 							
 						}
 						
