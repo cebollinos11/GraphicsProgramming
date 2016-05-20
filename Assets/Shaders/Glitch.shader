@@ -70,7 +70,27 @@
 					sampler2D _RadarTexture;
 					fixed4 frag(v2f IN) : SV_Target
 					{
+
+						float v = sin(_Time.y*1.1)/4+0.5;
+						half tint = 0;
+						
+						if (IN.texcoord.x > v-0.1 && IN.texcoord.x < v+ 0.1)
+						{
+							if (sin(_Time.w * 2) > 0.8)
+							{
+								IN.texcoord.y = IN.texcoord.y - 0.06;//sin(_Time.w*5) / 15;
+								
+								tint = 1.0;
+
+							}
+								
+						}
+
 						fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
+
+						if (tint){
+							c.a *= 0.7;
+						}
 						
 						c.rgb *= c.a;
 						
@@ -78,14 +98,24 @@
 						{
 							//IN.texcoord *= 0.0;
 
+							
+
+
 							fixed4 noise = tex2D(_NoiseTexture, IN.texcoord + half2(0,_Time.y) );
 							c.rgb = lerp(c.rgb, noise.rgb, 0.2);
+							//c.rgb = lerp(c.rgb, fixed3(c.r, 1.0, c.b), 0.2);
+							
 
-							fixed4 radar = tex2D(_RadarTexture, IN.texcoord - half2(0, _Time.z));
+							fixed4 radar = tex2D(_RadarTexture, IN.texcoord + half2(0, _Time.y));
 							if (radar.a > 0.1)
 							{
-								c.rgb = lerp(c.rgb, radar.rgb, 0.1);
-								c.a = 0.1;
+								c.rgb = lerp(c.rgb, radar.rgb, 0.2);
+								//c.rgb = fixed3(1, 1, 1) - c.rgb;
+								//c.a = 0.1;
+								/*c.r = 1 - c.r;
+								c.g = 1.0 - c.g;
+								c.b = 1.0 - c.b;
+								*/
 							}
 							//c.rgb = lerp(c.rgb, fixed3(0.0,0.0,1.0), 0.1);
 						}
