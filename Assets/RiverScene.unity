@@ -454,7 +454,7 @@ GameObject:
   - 4: {fileID: 435508457}
   - 212: {fileID: 435508458}
   m_Layer: 0
-  m_Name: eye
+  m_Name: blue
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -861,8 +861,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 831061854}
   - 212: {fileID: 831061853}
+  - 95: {fileID: 831061855}
   m_Layer: 0
-  m_Name: acid
+  m_Name: eye
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,7 +897,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1a2cb23cbc3246e44ad660d08a74ddef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
 --- !u!4 &831061854
 Transform:
@@ -905,11 +906,28 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831061852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46380642, y: -0.4554758, z: 0.34065092}
+  m_LocalPosition: {x: -1.352, y: 0.174, z: 0.34065092}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 454670721}
   m_RootOrder: 1
+--- !u!95 &831061855
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831061852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c06dc37d4aff7134a96118dc410a5966, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1158953468
 GameObject:
   m_ObjectHideFlags: 0
